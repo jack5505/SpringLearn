@@ -22,9 +22,9 @@ public class Alien {
         this.age = age;
     }
 
-    public Alien(int age){
+    public Alien(int age,Laptop laptop){
         this.age = age;
-
+        this.laptop = laptop;
     }
 
     public void code()
