@@ -22,7 +22,8 @@ public class Alien {
         this.age = age;
     }
 
-    public Alien(){
+    public Alien(int age){
+        this.age = age;
 
     }
 
