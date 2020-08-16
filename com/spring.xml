@@ -4,6 +4,11 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
     <bean id="alien" class="jack.Alien" scope="prototype">
         <property name="age" value="10"></property>
+        <property name="laptop" ref="laptop"></property>
+    </bean>
+
+    <bean id="laptop" class="jack.Laptop">
+
     </bean>
 
 
