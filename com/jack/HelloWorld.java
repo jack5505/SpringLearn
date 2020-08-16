@@ -16,14 +16,10 @@ public class HelloWorld {
         ApplicationContext factory = new ClassPathXmlApplicationContext("spring.xml");
 
         Alien obj = (Alien) factory.getBean("alien");
-        obj.age = 15;
         obj.code();
-        System.out.println(obj.age);
+        System.out.println(obj.getAge());
 
-        Alien obj1 = (Alien) factory.getBean("alien");
-        obj.code();
-        System.out.println(obj1.age);
-        
+
 
 
     }
