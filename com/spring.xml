@@ -2,15 +2,15 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
-    <bean id="alien" class="jack.Alien" scope="prototype">
-        <constructor-arg index="0" value="15"></constructor-arg>
-        <constructor-arg index="1" ref="laptop"></constructor-arg>
-        <property name="laptop" ref="laptop"></property>
+    <bean id="alien" class="jack.Alien" scope="prototype" autowire="byName">
+        <property name="age" value="15"></property>
     </bean>
 
-    <bean id="laptop" class="jack.Laptop">
+    <bean id="comp" class="jack.Laptop">
 
     </bean>
+    <bean id="desktop" class="jack.Desktop">
 
+    </bean>
 
 </beans>
