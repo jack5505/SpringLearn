@@ -23,7 +23,7 @@ public class HelloWorld {
         Alien obj1 = (Alien) factory.getBean("alien");
         obj.code();
         System.out.println(obj1.age);
-
+        
 
 
     }
